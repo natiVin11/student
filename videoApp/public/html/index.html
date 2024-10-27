@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="icon" href="data:," />
+    <title>צפייה בסרטונים</title>
+</head>
+<body>
+<header>
+    <h1>צפייה בסרטונים</h1> <!-- כותרת עמוד -->
+</header>
+
+<!-- סרגל חיפוש וקטגוריות -->
+<section class="search-section">
+    <input type="text" id="searchInput" placeholder="חפש סרטון..." />
+    <div class="category-buttons">
+        <button onclick="filterVideos('כללי')">כללי</button>
+        <button onclick="filterVideos('אפליקציה')">אפליקציה</button>
+        <button onclick="filterVideos('סיסטם')">סיסטם</button>
+        <button onclick="filterVideos('מוקד')">מוקד</button>
+        <button onclick="filterVideos('סטודנטים')">סטודנטים</button>
+    </div>
+</section>
+
+<!-- רשימת הסרטונים -->
+<div id="videoList" class="video-list"></div>
+
+<footer>
+    <p>&copy; כל הזכויות שמורות ל-nati vinter ltd.</p>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
